@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDrive Download Link Generator</title>
+</head>
+<body>
+    <div>
+        <h1>Google Drive Download Link Generator</h1>
+        <div id="mainpanel">
+            <div>
+                <p>Get the download link for a GDrive share link.</p>
+            </div>
+            <div>
+                <form>
+                    <div>
+                        <label for="sharelink">Share link</label>
+                        <input type="text" id="sharelink" placeholder="https://drive.google.com/file/d/XX-X__XXXXX-XXXXXXXXXXXXXXXX/view?usp=sharing" autofocus="true">
+                    </div>
+                    <div>
+                        <label for="downloadlink">Download link</label>
+                        <div>
+                            <input type="text" id="downloadlink" readonly>
+                            <span>
+                                <button id="copylinkbtn" type="button" data-clipboard-target="#downloadlink" disabled>Copy link</button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+                <div id="collapseExample">
+                    <br>
+                    <div>
+                        <img src="https://drive.google.com/uc?export=download&id=0B-B__6JMBt-jb1MxWHY5UE5QUXM" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
